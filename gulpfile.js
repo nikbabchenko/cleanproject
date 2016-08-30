@@ -8,13 +8,15 @@ var gulp = require('gulp'),
     pngquant = require('imagemin-pngquant'),
     connect = require('gulp-connect'),
     concat = require('gulp-concat'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    babel = require("gulp-babel");
 
 
 var slimSources = ['development/slim/*.slim'];
 var sassSources = ['development/sass/application.sass' ];
 // var coffeeSources = ['development/coffeescripts/*.coffee'];
 var imageSources = ['development/images/*'];
+var jsSources = ['development/js/app.js'];
 
 gulp.task('slim', function(){
   gulp.src(slimSources)
@@ -53,6 +55,15 @@ gulp.task('imagesMin', function () {
         .pipe(connect.reload())
 });
 
+gulp.task('js', function(){
+  return gulp.src(jsSources)
+    .pipe(babel({
+      "presets": ["es2015"]
+    }))
+    .pipe(gulp.dest("production/js"))
+    .pipe(connect.reload())
+});
+
 gulp.task('connect', function() {
   connect.server({
     root: 'production/',
@@ -64,9 +75,10 @@ gulp.task('watch', function() {
   gulp.watch(slimSources, ['slim']);
   gulp.watch('development/sass/**', ['sass']);
   // gulp.watch(coffeeSources, ['coffee']);
+  gulp.watch(jsSources, ['js']);
   gulp.watch(imageSources, ['imagesMin']);
 });
 
 
 
-gulp.task('default', ['watch', 'connect']);
+gulp.task('default', ['watch', 'connect', 'js']);
