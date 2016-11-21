@@ -3,9 +3,10 @@ main
     font-size: 16px
     line-height: 1.4
 
-.table-main-wrapper
-    overflow: auto
-    display: none
+.rte_content
+    table
+        overflow: auto
+        display: none
 
 .table-wrapper
     .table
@@ -24,6 +25,17 @@ main
 
 .table-slider
     display: flex
+    font-family: $fontHyundaiTextRegular
+    font-size: 14px
+
+    p
+        margin: 0
+        font-family: $fontHyundaiTextRegular
+        font-size: 14px
+        strong
+            font-family: $fontHyundaiTextBold
+            font-weight: normal
+
     .table-slider_fixed-column
         width: 23%
         table
@@ -32,11 +44,20 @@ main
             overflow: hidden
             tr
                 td
-                    padding: 8px
+                    padding: 10px
                     border-bottom: 1px solid $Black
                     border-top: none
                     &:first-child
                         background: #f0f0f0
+                        position: relative
+                &:last-child
+                    td
+                        border-bottom: none
+                &:first-child
+                    td
+                        border-bottom: 3px solid $Black
+
+
     .table-slider_content
         width: 77%
         overflow: hidden
@@ -45,6 +66,30 @@ main
             transition: margin-left 0.25s ease-in-out
             tr
                 td
-                    padding: 8px
+                    padding: 10px
                     border-bottom: 1px solid $Black
                     border-top: none
+
+                    &:first-child
+                        padding-left: 18px
+
+                &:last-child
+                    td
+                        border-bottom: none
+
+                &:first-child
+                    td
+                        border-bottom: 3px solid $Black
+
+                        &:first-child
+                            position: relative
+                            padding-left: 18px
+
+                            &:before
+                                content: ''
+                                width: 10px
+                                height: 3px
+                                position: absolute
+                                left: 0
+                                bottom: -3px
+                                background: $White

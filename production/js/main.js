@@ -9,14 +9,27 @@
             this._calculateWidth();
 
             $(window).on('resize', function(){
-                this._calculateWidth();
+                tableSlider._calculateWidth();
             });
         },
 
         buildSlider: function () {
             var table = $('.table');
-            var fixedContent = table.find('tbody').clone();
-            var fixedColumn = table.find('tbody').clone();
+            var fixedContent = table.find('tbody, thead').clone();
+            var fixedColumn = table.find('thead, tbody').clone();
+
+            var sliderContent = $([
+                '<div class="table-slider">',
+                    '<div class="table-slider_fixed-column">',
+                        '<table border="0" cellpadding="0" cellspacing="0" width="100%">',
+                        '</table>',
+                    '</div>',
+                    '<div class="table-slider_content">',
+                        '<table border="0" cellpadding="0" cellspacing="0" width="100%">',
+                        '</table>',
+                '</div>'].join(''));
+
+                sliderContent.insertBefore('.rte_content');
 
             var stickyCol = $('.table-slider_fixed-column table');
             var sliderContent = $('.table-slider_content table');
@@ -38,7 +51,8 @@
                     var containerWith = $('.table-slider_content').width();
                     var fixedColumnContainerWidth = $('.table-slider_fixed-column').width();
                     var fixedColumnCell = $('.table-slider_fixed-column table tr td');
-                    var cellWidth = containerWith / 4;
+                    var sliderQuantity = 3;
+                    var cellWidth = containerWith / sliderQuantity;
 
                     fixedColumnCell.css(
                         {"width" : fixedColumnContainerWidth + 'px'}
@@ -57,9 +71,13 @@
                             {"width" : tableWidth + 'px'}
                         );
 
-                     $('.table-slider_content').find('tr').each(function (i) {
-                        $('.table-slider_fixed-column table').find('tr').eq(i).height($(this).height());
-                    });
+                     $('.table-slider_content')
+                        .find('tr').each(function (i) {
+                            $('.table-slider_fixed-column table')
+                                .find('tr')
+                                    .eq(i)
+                                        .height($(this).height());
+                        });
 
                 },
 
@@ -69,7 +87,7 @@
             var content = $('.table-slider_content table');
             var back = $('.table-previous');
             var next = $('.table-next');
-            var visibleItems = 4;
+            var visibleItems = 3;
             var totalItems = content.find('tr:first-child td').length;
             var iteration = 0;
             var iterations = totalItems / visibleItems;

@@ -403,11 +403,11 @@ template {
   display: none; }
 
 html, body {
-  font-size: 13px;
-  line-height: 1.4em;
-  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: HyundaiSansText-Regular;
   font-weight: 400;
-  color: #393939; }
+  color: #000000; }
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -423,6 +423,120 @@ ul, li {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+@font-face {
+  font-family: GenesisSansHead-Light;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GenesisSansHead-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GenesisSansHead-Light.woff2") format("woff2"), url("../fonts/GenesisSansHead-Light.woff") format("woff"), url("../fonts/GenesisSansHead-Light.ttf") format("truetype"), url("../fonts/GenesisSansHead-Light.svg#GenesisSansHead-Light") format("svg"); }
+
+@font-face {
+  font-family: GenesisSansText-Bold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GenesisSansText-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GenesisSansText-Bold.woff2") format("woff2"), url("../fonts/GenesisSansText-Bold.woff") format("woff"), url("../fonts/GenesisSansText-Bold.ttf") format("truetype"), url("../fonts/GenesisSansText-Bold.svg#GenesisSansText-Bold") format("svg"); }
+
+@font-face {
+  font-family: GenesisSansText-BoldItalic;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GenesisSansText-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GenesisSansText-BoldItalic.woff2") format("woff2"), url("../fonts/GenesisSansText-BoldItalic.woff") format("woff"), url("../fonts/GenesisSansText-BoldItalic.ttf") format("truetype"), url("../fonts/GenesisSansText-BoldItalic.svg#GenesisSansText-BoldItalic") format("svg"); }
+
+@font-face {
+  font-family: GenesisSansText-Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GenesisSansText-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/GenesisSansText-Italic.woff2") format("woff2"), url("../fonts/GenesisSansText-Italic.woff") format("woff"), url("../fonts/GenesisSansText-Italic.ttf") format("truetype"), url("../fonts/GenesisSansText-Italic.svg#GenesisSansText-Italic") format("svg"); }
+
+@font-face {
+  font-family: GenesisSansText-Medium;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GenesisSansText-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GenesisSansText-Medium.woff2") format("woff2"), url("../fonts/GenesisSansText-Medium.woff") format("woff"), url("../fonts/GenesisSansText-Medium.ttf") format("truetype"), url("../fonts/GenesisSansText-Medium.svg#GenesisSansText-Medium") format("svg"); }
+
+@font-face {
+  font-family: GenesisSansText-MediumItalic;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GenesisSansText-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GenesisSansText-MediumItalic.woff2") format("woff2"), url("../fonts/GenesisSansText-MediumItalic.woff") format("woff"), url("../fonts/GenesisSansText-MediumItalic.ttf") format("truetype"), url("../fonts/GenesisSansText-MediumItalic.svg#GenesisSansText-MediumItalic") format("svg"); }
+
+@font-face {
+  font-family: GenesisSansText-Regular;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GenesisSansText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/GenesisSansText-Regular.woff2") format("woff2"), url("../fonts/GenesisSansText-Regular.woff") format("woff"), url("../fonts/GenesisSansText-Regular.ttf") format("truetype"), url("../fonts/GenesisSansText-Regular.svg#GenesisSansText-Regular") format("svg"); }
+
+@font-face {
+  font-family: HyundaiSansHead-Bold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansHead-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HyundaiSansHead-Bold.woff2") format("woff2"), url("../fonts/HyundaiSansHead-Bold.woff") format("woff"), url("../fonts/HyundaiSansHead-Bold.ttf") format("truetype"), url("../fonts/HyundaiSansHead-Bold.svg#HyundaiSansHead-Bold") format("svg"); }
+
+@font-face {
+  font-family: HyundaiSansHead-Light;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansHead-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HyundaiSansHead-Light.woff2") format("woff2"), url("../fonts/HyundaiSansHead-Light.woff") format("woff"), url("../fonts/HyundaiSansHead-Light.ttf") format("truetype"), url("../fonts/HyundaiSansHead-Light.svg#HyundaiSansHead-Light") format("svg"); }
+
+@font-face {
+  font-family: HyundaiSansHead-Medium;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansHead-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HyundaiSansHead-Medium.woff2") format("woff2"), url("../fonts/HyundaiSansHead-Medium.woff") format("woff"), url("../fonts/HyundaiSansHead-Medium.ttf") format("truetype"), url("../fonts/HyundaiSansHead-Medium.svg#HyundaiSansHead-Medium") format("svg"); }
+
+@font-face {
+  font-family: HyundaiSansHead-Regular;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansHead-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/HyundaiSansHead-Regular.woff2") format("woff2"), url("../fonts/HyundaiSansHead-Regular.woff") format("woff"), url("../fonts/HyundaiSansHead-Regular.ttf") format("truetype"), url("../fonts/HyundaiSansHead-Regular.svg#HyundaiSansHead-Regular") format("svg"); }
+
+@font-face {
+  font-family: HyundaiSansText-Bold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansText-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/HyundaiSansText-Bold.woff2") format("woff2"), url("../fonts/HyundaiSansText-Bold.woff") format("woff"), url("../fonts/HyundaiSansText-Bold.ttf") format("truetype"), url("../fonts/HyundaiSansText-Bold.svg#HyundaiSansText-Bold") format("svg"); }
+
+@font-face {
+  font-family: HyundaiSansText-BoldItalic;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansText-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/HyundaiSansText-BoldItalic.woff2") format("woff2"), url("../fonts/HyundaiSansText-BoldItalic.woff") format("woff"), url("../fonts/HyundaiSansText-BoldItalic.ttf") format("truetype"), url("../fonts/HyundaiSansText-BoldItalic.svg#HyundaiSansText-BoldItalic") format("svg"); }
+
+@font-face {
+  font-family: HyundaiSansText-Italic;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansText-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/HyundaiSansText-Italic.woff2") format("woff2"), url("../fonts/HyundaiSansText-Italic.woff") format("woff"), url("../fonts/HyundaiSansText-Italic.ttf") format("truetype"), url("../fonts/HyundaiSansText-Italic.svg#HyundaiSansText-Italic") format("svg"); }
+
+@font-face {
+  font-family: HyundaiSansText-Medium;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansText-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/HyundaiSansText-Medium.woff2") format("woff2"), url("../fonts/HyundaiSansText-Medium.woff") format("woff"), url("../fonts/HyundaiSansText-Medium.ttf") format("truetype"), url("../fonts/HyundaiSansText-Medium.svg#HyundaiSansText-Medium") format("svg"); }
+
+@font-face {
+  font-family: HyundaiSansText-MediumItalic;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansText-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/HyundaiSansText-MediumItalic.woff2") format("woff2"), url("../fonts/HyundaiSansText-MediumItalic.woff") format("woff"), url("../fonts/HyundaiSansText-MediumItalic.ttf") format("truetype"), url("../fonts/HyundaiSansText-MediumItalic.svg#HyundaiSansText-MediumItalic") format("svg"); }
+
+@font-face {
+  font-family: HyundaiSansText-Regular;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HyundaiSansText-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/HyundaiSansText-Regular.woff2") format("woff2"), url("../fonts/HyundaiSansText-Regular.woff") format("woff"), url("../fonts/HyundaiSansText-Regular.ttf") format("truetype"), url("../fonts/HyundaiSansText-Regular.svg#HyundaiSansText-Regular") format("svg"); }
+
+@font-face {
+  font-family: icon_set_buttons;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icon_set_buttons.eot?#iefix") format("embedded-opentype"), url("../fonts/icon_set_buttons.woff2") format("woff2"), url("../fonts/icon_set_buttons.woff") format("woff"), url("../fonts/icon_set_buttons.ttf") format("truetype"), url("../fonts/icon_set_buttons.svg#icon_set_buttons") format("svg"); }
+
+@font-face {
+  font-family: icon_set_buttons_adv;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/icon_set_buttons_adv.eot?#iefix") format("embedded-opentype"), url("../fonts/icon_set_buttons_adv.woff2") format("woff2"), url("../fonts/icon_set_buttons_adv.woff") format("woff"), url("../fonts/icon_set_buttons_adv.ttf") format("truetype"), url("../fonts/icon_set_buttons_adv.svg#icon_set_buttons_adv") format("svg"); }
 
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2519,7 +2633,7 @@ main {
   font-size: 16px;
   line-height: 1.4; }
 
-.table-main-wrapper {
+.rte_content table {
   overflow: auto;
   display: none; }
 
@@ -2536,7 +2650,16 @@ main {
     border-bottom: 2px solid #000000; }
 
 .table-slider {
-  display: flex; }
+  display: flex;
+  font-family: HyundaiSansText-Regular;
+  font-size: 14px; }
+  .table-slider p {
+    margin: 0;
+    font-family: HyundaiSansText-Regular;
+    font-size: 14px; }
+    .table-slider p strong {
+      font-family: HyundaiSansText-Bold;
+      font-weight: normal; }
   .table-slider .table-slider_fixed-column {
     width: 23%; }
     .table-slider .table-slider_fixed-column table {
@@ -2544,11 +2667,16 @@ main {
       table-layout: fixed;
       overflow: hidden; }
       .table-slider .table-slider_fixed-column table tr td {
-        padding: 8px;
+        padding: 10px;
         border-bottom: 1px solid #000000;
         border-top: none; }
         .table-slider .table-slider_fixed-column table tr td:first-child {
-          background: #f0f0f0; }
+          background: #f0f0f0;
+          position: relative; }
+      .table-slider .table-slider_fixed-column table tr:last-child td {
+        border-bottom: none; }
+      .table-slider .table-slider_fixed-column table tr:first-child td {
+        border-bottom: 3px solid #000000; }
   .table-slider .table-slider_content {
     width: 77%;
     overflow: hidden; }
@@ -2556,6 +2684,23 @@ main {
       width: 100%;
       transition: margin-left 0.25s ease-in-out; }
       .table-slider .table-slider_content table tr td {
-        padding: 8px;
+        padding: 10px;
         border-bottom: 1px solid #000000;
         border-top: none; }
+        .table-slider .table-slider_content table tr td:first-child {
+          padding-left: 18px; }
+      .table-slider .table-slider_content table tr:last-child td {
+        border-bottom: none; }
+      .table-slider .table-slider_content table tr:first-child td {
+        border-bottom: 3px solid #000000; }
+        .table-slider .table-slider_content table tr:first-child td:first-child {
+          position: relative;
+          padding-left: 18px; }
+          .table-slider .table-slider_content table tr:first-child td:first-child:before {
+            content: '';
+            width: 10px;
+            height: 3px;
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            background: #ffffff; }
