@@ -12,6 +12,7 @@ var gulp = require('gulp'),
 
 
 var slimSources = ['development/slim/*.slim'];
+var htmlSources = ['production/*.html'];
 var sassSources = ['development/sass/application.sass' ];
 // var coffeeSources = ['development/coffeescripts/*.coffee'];
 var imageSources = ['development/images/*'];
@@ -23,6 +24,12 @@ gulp.task('slim', function(){
     }))
     .on('error', gutil.log)
     .pipe(gulp.dest("production/"))
+    .pipe(connect.reload())
+});
+
+gulp.task('html', function(){
+  gulp.src(htmlSources)
+    .on('error', gutil.log)
     .pipe(connect.reload())
 });
 
@@ -61,7 +68,7 @@ gulp.task('connect', function() {
   });
 
 gulp.task('watch', function() {
-  gulp.watch(slimSources, ['slim']);
+  gulp.watch(htmlSources, ['html']);
   gulp.watch('development/sass/**', ['sass']);
   // gulp.watch(coffeeSources, ['coffee']);
   gulp.watch(imageSources, ['imagesMin']);

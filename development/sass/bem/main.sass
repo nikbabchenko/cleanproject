@@ -1,0 +1,50 @@
+main
+    padding-top:  80px
+    font-size: 16px
+    line-height: 1.4
+
+.table-main-wrapper
+    overflow: auto
+    display: none
+
+.table-wrapper
+    .table
+        width: 100%
+        tr
+            td
+                padding: 8px
+                border-bottom: 1px solid $Black
+                border-top: none
+                &:first-child
+                    background: #f0f0f0
+                    width: 23.2%
+            &:first-child
+                border-bottom: 2px solid $Black
+
+
+.table-slider
+    display: flex
+    .table-slider_fixed-column
+        width: 23%
+        table
+            width: 100%
+            table-layout: fixed
+            overflow: hidden
+            tr
+                td
+                    padding: 8px
+                    border-bottom: 1px solid $Black
+                    border-top: none
+                    &:first-child
+                        background: #f0f0f0
+    .table-slider_content
+        width: 77%
+        overflow: hidden
+        table
+            width: 100%
+            transition: margin-left 0.25s ease-in-out
+            tr
+                td
+                    padding: 8px
+                    border-bottom: 1px solid $Black
+                    border-top: none
