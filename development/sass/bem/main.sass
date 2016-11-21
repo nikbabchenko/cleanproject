@@ -8,6 +8,63 @@ main
         overflow: auto
         display: none
 
+.table-controls-wrapper
+    display: flex
+    justify-content: flex-end
+
+    @include mq(s)
+        justify-content: center
+
+    .table-controls
+        display: flex
+        align-items: center
+
+        .table-previous,
+        .table-next
+            position: relative
+            font-size:  0
+            width: 20px
+            height: 20px
+            text-decoration: none
+            display: block
+            &:before
+                padding-top: 1px
+                font-family: $fontHyundaiHeadRegular
+                content: '\2039'
+                color: $Blue
+                font-size: 32px
+                font-weight: bold
+                position: absolute
+                left: 0
+                top: 50%
+                -webkit-transform: translateY(-50%)
+                -ms-transform: translateY(-50%)
+                -o-transform: translateY(-50%)
+                transform: translateY(-50%)
+
+        .table-next
+            &:before
+                content: '\203A'
+                left: auto
+                right: 0
+
+    .pagination
+        font-family: $fontHyundaiTextRegular
+        font-size: 16px
+        font-weight: normal
+        line-height: 1.4
+        min-width: 30px
+        text-align: center
+
+        .pagination-current,
+        .pagination-total
+            text-decoration: none
+            color: $Black
+            font-family: $fontHyundaiTextRegular
+            font-size: 16px
+            font-weight: normal
+            line-height: 1
+
 .table-wrapper
     .table
         width: 100%
@@ -38,6 +95,9 @@ main
 
     .table-slider_fixed-column
         width: 23%
+        @include mq(s)
+            width: 50%
+
         table
             width: 100%
             table-layout: fixed
@@ -61,9 +121,10 @@ main
     .table-slider_content
         width: 77%
         overflow: hidden
+        position: relative
         table
             width: 100%
-            transition: margin-left 0.25s ease-in-out
+            transition: margin-left 0.6s ease
             tr
                 td
                     padding: 10px
